@@ -5,4 +5,9 @@ class TasklistsController < ApplicationController
     @tasklists = Tasklist.all
   end
 
+  def show
+    @tasklist = Tasklist.find(params[:id])
+    @tasks = @tasklist.tasks.all
+  end
+
 end
