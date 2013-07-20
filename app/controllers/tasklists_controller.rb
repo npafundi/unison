@@ -2,7 +2,7 @@ class TasklistsController < ApplicationController
   respond_to :json
 
   def index
-    @forms = Tasklist.all
+    @tasklists = Tasklist.all
   end
 
 end
