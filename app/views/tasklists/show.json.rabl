@@ -1,4 +1,4 @@
-collection @tasklist
+object @tasklist
 
-attributes *Tasklist.column_names
+attributes :name
 child(:tasks) {attributes :name, :details, :status}
