@@ -4,4 +4,9 @@
 
   console.log "Unison started"
 
+  App.addRegions
+    headerRegion: "#header-region"
+    mainRegion: "#main-region"
+    footerRegion: "#footer-region"
+
   App
