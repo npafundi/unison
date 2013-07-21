@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require lodash
+//= require backbone
+//= require marionette
+//= require_tree ./config
+//= require app
+//= require_tree ./entities
