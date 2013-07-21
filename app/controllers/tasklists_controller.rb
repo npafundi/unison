@@ -33,9 +33,7 @@ class TasklistsController < ApplicationController
 
   def destroy
     tasklist = Tasklist.find params[:id]
-    tasklist.tasks.destroy_all
     tasklist.destroy
-
     # empty json for backbone
     render json: {}
   end
