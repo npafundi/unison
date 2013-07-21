@@ -21,6 +21,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rabl'
+gem 'bootstrap-sass'
+gem 'bourbon'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
