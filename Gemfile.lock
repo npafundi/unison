@@ -61,6 +61,8 @@ GEM
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    js-routes (0.9.2)
+      rails (>= 3.2)
     json (1.8.0)
     json_pure (1.8.0)
     mail (2.5.4)
@@ -161,6 +163,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  js-routes
   pg (= 0.15.1)
   rabl
   rails (= 4.0.0)
