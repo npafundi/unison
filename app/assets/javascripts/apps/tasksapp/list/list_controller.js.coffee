@@ -11,5 +11,6 @@
       taskListView = @getTaskListView tasklistCollection
       App.mainRegion.show taskListView
 
-    getTaskListView: ->
-      new List.Tasklist
+    getTaskListView: (tasklistCollection) ->
+      new List.Collection
+        collection: tasklistCollection
