@@ -1,6 +1,8 @@
 @Unison.module "TasksApp", (TasksApp, App, Backbone, Marionette, $, _) ->
 
   class TasksApp.Router extends Marionette.AppRouter
+    appRoutes:
+      "tasklists" : "list"
 
 
   API =
