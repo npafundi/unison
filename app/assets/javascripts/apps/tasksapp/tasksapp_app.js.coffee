@@ -4,20 +4,19 @@
     appRoutes:
       "tasklists" : "list"
 
-
   API =
     list: ->
-      new TaskApp.List.Controller
+      new TasksApp.List.Controller
 
     edit: (id, tasklist) ->
-      new TaskApp.Edit.Controller
+      new TasksApp.Edit.Controller
         id: id
         tasklist: tasklist
 
     newTasklist: (region) ->
-      new TaskApp.New.Controller
+      new TasksApp.New.Controller
         region: region
 
   App.addInitializer ->
-    new TaskApp.Router
+    new TasksApp.Router
       controller: API
