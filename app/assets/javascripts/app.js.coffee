@@ -13,6 +13,7 @@
 
   App.addInitializer ->
     App.module("HeaderApp").start()
+    App.module("FooterApp").start()
 
   App.on "initialize:after", ->
     @startHistory()
