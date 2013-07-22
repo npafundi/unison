@@ -5,8 +5,11 @@
     initialize: ->
       console.log("tasksapp list_controller init")
       tasklistCollection = App.request "tasklistCollection:entities"
-      
+
       console.log(tasklistCollection)
 
-      taskListView = new List.Tasklist
+      taskListView = @getTaskListView tasklistCollection
       App.mainRegion.show taskListView
+
+    getTaskListView: ->
+      new List.Tasklist
