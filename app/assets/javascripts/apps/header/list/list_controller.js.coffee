@@ -3,5 +3,6 @@
   class List.Controller extends Marionette.Controller
 
     initialize: ->
+      console.log "controller init"
       listView = new List.Header
-      @region.show listView
+      App.headerRegion.show listView

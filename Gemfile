@@ -24,6 +24,7 @@ gem 'rabl'
 gem 'bootstrap-sass'
 gem 'bourbon'
 gem 'js-routes'
+gem 'eco'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false

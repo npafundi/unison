@@ -1,5 +1,6 @@
 @Unison.module "HeaderApp", (HeaderApp, App, Backbone, Marionette, $, _) ->
-  
+  @startWithParent = false
+
   API =
     list: ->
       new HeaderApp.List.Controller

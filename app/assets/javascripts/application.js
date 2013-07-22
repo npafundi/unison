@@ -16,6 +16,8 @@
 //= require lodash
 //= require backbone
 //= require marionette
+//= require js-routes
 //= require_tree ./config
 //= require app
 //= require_tree ./entities
+//= require_tree ./apps

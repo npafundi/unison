@@ -9,7 +9,13 @@
     mainRegion: "#main-region"
     footerRegion: "#footer-region"
 
+  App.rootRoute = Routes.tasklists_path()
+
   App.addInitializer ->
     App.module("HeaderApp").start()
+
+  App.on "initialize:after", ->
+    @startHistory()
+    @navigate(@rootRoute, trigger: true) unless @getCurrentRoute()
 
   App
