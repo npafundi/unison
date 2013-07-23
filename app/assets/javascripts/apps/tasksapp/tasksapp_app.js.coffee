@@ -3,6 +3,7 @@
   class TasksApp.Router extends Marionette.AppRouter
     appRoutes:
       "tasklists" : "list"
+      "tasklists/:id/edit" : "edit"
 
   API =
     list: ->

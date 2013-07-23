@@ -7,6 +7,7 @@
   App.addRegions
     headerRegion: "#header-region"
     mainRegion: "#main-region"
+    subRegion: "#sub-region"
     footerRegion: "#footer-region"
 
   App.rootRoute = Routes.tasklists_path()

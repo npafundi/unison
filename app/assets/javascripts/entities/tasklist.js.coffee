@@ -14,5 +14,17 @@
         reset: true
       tasklistCollection
 
+    #NOTE: This is weird naming...it should perhaps be getTaskList,
+    #      but we have tasklists and task lists...ugh
+    getTasklist: (id) ->
+      tasklist = new Entities.Tasklist
+        id: id
+      tasklist.fetch()
+      tasklist
+
+
   App.reqres.setHandler "tasklistCollection:entities", ->
     API.getTasklistCollection()
+
+  App.reqres.setHandler "tasklist:entities", (id) ->
+    API.getTasklist id
